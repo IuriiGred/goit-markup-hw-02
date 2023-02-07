@@ -4,23 +4,16 @@
     --color-cornflower: #e7e9fc;
     --color-light: #8e8f99;
     --color-slate: #434455;
-    --color-navy-current: #9747ff;
     --color-ocean: #404bbf;
     --color-iris: #4d5ae5;
+    --color-back: #ffffff;
+    --color-white: #ffffff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: #fff;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
+    background-color: var(--color-back);
 }
 
 .logo {
@@ -34,57 +27,63 @@ a {
 .start {
     color: var(--color-iris);
     line-height: 1.333;
+    text-decoration: none;
 }
 
 .end {
     color: var(--color-navy);
     line-height: 1.333;
+    text-decoration: none;
 }
 
 .footer-start {
     color: var(--color-iris);
     line-height: 1.174;
-    }
+    text-decoration: none;
+}
 
 .footer-end {
     color: var(--color-cloud);
     line-height: 1.174;
+    text-decoration: none;
 }
 
 .menu-nav {
     color: var(--color-navy);
-    font-style:normal;
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    text-decoration: none;
 }
 
 .menu-nav.current {
-    color: var(--color-navy-current);
+    color: var(--color-ocean);
 }
 
 .menu-nav:hover {
-    color: var(--color-navy-current);
-    background-color: #fff;
+    color: var(--color-ocean);
+    background-color: var(--color-back);
 }
 
 .menu-nav:active{
-    color: var(--color-navy-current);
-    text-decoration: underline var(--color-navy-current);
-    background-color: #fff;
+    color: var(--color-ocean);
+    text-decoration: underline var(--color-ocean);
+    background-color: var(--color-back);
 }
 
 .contakt {
     color: var(--color-slate);
-    font-style: normal;
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    text-decoration: none;
 }
 
-.contakt:active, :hover {
-    color: var(--color-navy-current);
-    background-color: #fff;
+.contakt:active,
+.contakt:hover {
+    color: var(--color-ocean);
+    background-color: var(--color-back);
+    list-style-type: none;
 }
 
 .section-back {
@@ -92,27 +91,39 @@ background-color: var(--color-navy);
 }
 
 .hero-title {
-    color: #ffffff;
+    color: var(--color-back);
     font-weight: 700;
     letter-spacing: 0.02em;
     font-size: 56px;
     line-height: 1.0714;
     text-align: center;
-    }
+}
 
 .order-button {
+    font-family: inherit;
     background-color: var(--color-iris);
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--color-white);
     letter-spacing: 0.04em;
     line-height: 1.5;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    list-style-type: none;
 }
 
-.order-button:hover, :focus {
-    background-color: #404bbf;
+.order-button:hover,
+.order-button:focus {
+    background-color: var(--color-ocean);
+}
+
+.text-decor {
+    text-decoration: none;
+}
+
+.li-style {
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .header-two {
@@ -140,11 +151,13 @@ background-color: var(--color-navy);
 }
 
 .our-team {
-    background-color: #F4F4FD;
+    background-color: var(--color-cloud);
 }
 
 .our-team-staff {
-    background-color: #fff;
+    background-color: var(--color-back);
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .footer-text {
@@ -152,13 +165,13 @@ background-color: var(--color-navy);
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    }   
+}   
 
 .list-button {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--color-iris);
-    background-color: #f4f4fd;
+    background-color: var(--color-cloud);
     letter-spacing: 0.04em;
     line-height: 1.5;
     border-radius: 4px;
@@ -167,16 +180,12 @@ background-color: var(--color-navy);
 }
 
 .list-button.all {
-    background-color: #404bbf;
-    color: #ffffff;
+    background-color: var(--color-ocean);
+    color: var(--color-white);
 }
 
-.list-button:focus {
-    background-color: #404bbf;
-    color: #ffffff;
-}
-
+.list-button:focus,
 .list-button:hover {
-    background-color: #404bbf;
-    color: #ffffff;
+    background-color: var(--color-ocean);
+    color: var(--color-white);
 }
