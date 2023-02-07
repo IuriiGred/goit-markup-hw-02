@@ -60,12 +60,17 @@ a {
 }
 
 .menu-nav.current {
-    color: var(color-navy-current);
+    color: var(--color-navy-current);
 }
 
-.menu-nav:active {
-    color: var(color-navy-current);
-    text-decoration: underline var(color-navy-current);
+.menu-nav:hover {
+    color: var(--color-navy-current);
+    background-color: #fff;
+}
+
+.menu-nav:active{
+    color: var(--color-navy-current);
+    text-decoration: underline var(--color-navy-current);
     background-color: #fff;
 }
 
@@ -77,7 +82,7 @@ a {
     line-height: 1.5;
 }
 
-.contakt:active {
+.contakt:active, :hover {
     color: var(--color-navy-current);
     background-color: #fff;
 }
@@ -138,6 +143,10 @@ background-color: var(--color-navy);
     background-color: #F4F4FD;
 }
 
+.our-team-staff {
+    background-color: #fff;
+}
+
 .footer-text {
     color: var(--color-cornflower);
     font-weight: 400;
@@ -157,7 +166,17 @@ background-color: var(--color-navy);
     cursor: pointer;
 }
 
+.list-button.all {
+    background-color: #404bbf;
+    color: #ffffff;
+}
+
 .list-button:focus {
+    background-color: #404bbf;
+    color: #ffffff;
+}
+
+.list-button:hover {
     background-color: #404bbf;
     color: #ffffff;
 }
